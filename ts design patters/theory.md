@@ -6,21 +6,44 @@ solid
     Interface Segregation => class should not depend on methos that doenst need over generalization of interfaces
     D ependency inversion => clases should depen on abstractions nos concrete implementations
 
-loose couple
-    as long as interfaces matches, swapping should be seamless
-    testeable
-    components independent
+creational patters
+    factory
+    singleton
+        
+    loose couple
+        as long as interfaces matches, swapping should be seamless
+        testeable
+        components independent
 
-object pool
-    pre initialized objects
-    we dont create news, we use from the pool
-    
-Dependency injection
-    Di container knows how to instantiate new instances of the dependencies
-        di container is in charge of registering new services
-            resolving dependencies
+    object pool
+        pre initialized objects
+        we dont create news, we use from the pool
+        
+    Dependency injection
+        Di container knows how to instantiate new instances of the dependencies
+            di container is in charge of registering new services
+                resolving dependencies
+            types
+                singleton: 1 instance for all
+                transient: 1 intance every time
+                request: one instance per request scope
 
-decorators  
-    applyed to: class, method, property, accessors
+    decorators  
+        applyed to: class, method, property, accessors
 
-    decorator has three AggregationCursor, descriptor is de implementation
+        decorator has three AggregationCursor, descriptor is de implementation
+
+structural patters
+    add responsabilities at runtime
+    decorator: decorate a class with aditional responsabilities. wraps class with another with the same interface. that allows to be wrapped multiple times, modifing the base behavoir
+    adapter: converts an interface to match the expected. object that matches the new required interface 
+    facade: create an object that acts a a simplified version of a complex class
+        ex: one method that needs result of many other methods
+
+    composite
+        for tree like data structures
+        use same interface for nodes and leafs,a common method: for the leafs does the work, for the nodes it goupes its leafs work 
+
+behavoiral patters
+    strategy create a bunch of algorithms and make them interchangable
+    observer: allow define a subscription mechanism to notify changes to multiple objects
