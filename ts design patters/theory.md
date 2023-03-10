@@ -19,3 +19,8 @@ Dependency injection
     Di container knows how to instantiate new instances of the dependencies
         di container is in charge of registering new services
             resolving dependencies
+
+decorators  
+    applyed to: class, method, property, accessors
+
+    decorator has three AggregationCursor, descriptor is de implementation
