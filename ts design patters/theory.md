@@ -7,8 +7,10 @@ solid
     D ependency inversion => clases should depen on abstractions nos concrete implementations
 
 creational patters
-    factory
-    singleton
+    factory: interface for pre-configured objects
+    builder: class with a base constructor and additional setter for extra poperties. simplifies a complex object creation process
+    singleton single point of entry, only one instance of the class.
+    for module.exports: the exported const(object) module works as singleton; when working with clases
         
     loose couple
         as long as interfaces matches, swapping should be seamless
@@ -48,3 +50,5 @@ behavoiral patters
     strategy create a bunch of algorithms and make them interchangable
     observer: allow define a subscription mechanism to notify changes to multiple objects
     command: define an object that will recive commands queue  and then execute them
+    template : inheritance to delegate implementation responsability to subclasses. allows to alter the class flow by start()
+    state: manage statas
