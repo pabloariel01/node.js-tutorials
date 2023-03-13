@@ -45,6 +45,8 @@ structural patters
     composite
         for tree like data structures
         use same interface for nodes and leafs,a common method: for the leafs does the work, for the nodes it goupes its leafs work 
+    proxi: sets a substitute object that controlls access and allows to perform operations before or after the requests gets to the object(logging,cahcing)
+
 
 behavoiral patters
     strategy create a bunch of algorithms and make them interchangable
@@ -52,3 +54,10 @@ behavoiral patters
     command: define an object that will recive commands queue  and then execute them
     template : inheritance to delegate implementation responsability to subclasses. allows to alter the class flow by start()
     state: manage statas
+
+    generators, have an asterisc function*. returns an iterator
+            have yield keyword, and the alogrithm stops until next() is received. last value ruturns {value:undefined, done:true}. a generator returns an iterator object. can be iterated using for-await-of
+
+    module design: for private scopes in js
+        revealing module: hide privates inside a function scope. invoqued function only returns whats public
+        for node with module.exports{} we choose what is visible
