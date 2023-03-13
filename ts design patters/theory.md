@@ -47,3 +47,4 @@ structural patters
 behavoiral patters
     strategy create a bunch of algorithms and make them interchangable
     observer: allow define a subscription mechanism to notify changes to multiple objects
+    command: define an object that will recive commands queue  and then execute them
