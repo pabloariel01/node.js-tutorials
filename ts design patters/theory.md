@@ -50,6 +50,7 @@ structural patters
 
 behavoiral patters
     strategy create a bunch of algorithms and make them interchangable
+        interface for the client(context) accepts multiple strategies
     observer: allow define a subscription mechanism to notify changes to multiple objects
     command: define an object that will recive commands queue  and then execute them
     template : inheritance to delegate implementation responsability to subclasses. allows to alter the class flow by start()
