@@ -37,4 +37,4 @@ const requestHandler = (req, res) => {
   res.end();
 };
 
-module.exports = requestHandler;
+module.exports = { handler: requestHandler };

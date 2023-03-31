@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "program": "${workspaceFolder}/node course2/app.js",
+      "restart": true,
+      "runtimeExecutable": "nodemon",
+      "console": "integratedTerminal"
+    }
+  ]
+}
